@@ -1,0 +1,60 @@
+# Drone Data Leakage Classification Research Project
+# Requirements file for reproducible environment setup
+
+# Core ML and Data Science Libraries
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.10.0
+accelerate>=0.20.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Visualization and Plotting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# Model Training and Evaluation
+tensorboard>=2.13.0
+wandb>=0.15.0
+tqdm>=4.65.0
+
+# Text Processing and NLP
+tokenizers>=0.13.0
+nltk>=3.8.0
+spacy>=3.6.0
+
+# Configuration and Utilities
+pyyaml>=6.0
+configparser>=5.3.0
+python-dotenv>=1.0.0
+click>=8.1.0
+
+# Jupyter and Development
+jupyter>=1.0.0
+ipykernel>=6.23.0
+notebook>=6.5.0
+
+# Testing and Quality Assurance
+pytest>=7.3.0
+pytest-cov>=4.1.0
+black>=23.3.0
+flake8>=6.0.0
+isort>=5.12.0
+
+# Documentation
+sphinx>=7.0.0
+sphinx-rtd-theme>=1.2.0
+
+# LaTeX and PDF Generation
+reportlab>=4.0.0
+weasyprint>=59.0
+
+# Additional Utilities
+requests>=2.31.0
+python-dateutil>=2.8.0
+psutil>=5.9.0
+joblib>=1.2.0
+

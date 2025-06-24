@@ -1,0 +1,110 @@
+# Drone Data Leakage Classification - Configuration File
+# Authors: Anas AlSobeh (Southern Illinois University Carbondale)
+#          Omar Darwish (Eastern Michigan University)
+
+# Dataset Configuration
+dataset:
+  name: "drone_data_leakage"
+  path: "data/dataset_64.csv"
+  target_column: "label"
+  feature_columns:
+    - "Mean_IAT"
+    - "Median_IAT"
+    - "Min_IAT"
+    - "Max_IAT"
+    - "STD_IAT"
+    - "Variance_IAT"
+    - "Entropy_IAT"
+    - "Packet_Count"
+    - "IAT_Range"
+    - "IAT_CV"
+    - "IAT_Ratio"
+    - "Log_Mean_IAT"
+    - "Log_Entropy_IAT"
+    - "Log_Packet_Count"
+  
+  # Data splits
+  train_size: 0.6
+  val_size: 0.2
+  test_size: 0.2
+  random_state: 42
+
+# Model Configuration
+model:
+  # Pre-trained model options: gpt2, gpt2-medium, gpt2-large, microsoft/DialoGPT-medium
+  pretrained_model: "gpt2"
+  max_length: 512
+  num_labels: 2
+  
+  # Fine-tuning parameters
+  learning_rate: 2e-5
+  batch_size: 16
+  num_epochs: 10
+  warmup_steps: 500
+  weight_decay: 0.01
+  gradient_accumulation_steps: 1
+  
+  # Early stopping
+  early_stopping_patience: 3
+  early_stopping_threshold: 0.001
+
+# Training Configuration
+training:
+  device: "auto"  # auto, cpu, cuda
+  mixed_precision: true
+  gradient_checkpointing: true
+  dataloader_num_workers: 4
+  pin_memory: true
+  
+  # Logging and checkpointing
+  logging_steps: 100
+  eval_steps: 500
+  save_steps: 1000
+  save_total_limit: 3
+  
+  # Evaluation metrics
+  metrics:
+    - "accuracy"
+    - "precision"
+    - "recall"
+    - "f1"
+    - "roc_auc"
+
+# Paths Configuration
+paths:
+  data_dir: "data"
+  models_dir: "models"
+  outputs_dir: "outputs"
+  figures_dir: "figures"
+  logs_dir: "logs"
+  checkpoints_dir: "models/checkpoints"
+
+# Visualization Configuration
+visualization:
+  style: "seaborn-v0_8"
+  palette: "husl"
+  figure_size: [12, 8]
+  dpi: 300
+  save_format: "png"
+
+# Experiment Configuration
+experiment:
+  name: "drone_classification_gpt"
+  description: "GPT-based classification of drone data leakage risk groups"
+  authors:
+    - "Anas AlSobeh"
+    - "Omar Darwish"
+  institutions:
+    - "Southern Illinois University Carbondale"
+    - "Eastern Michigan University"
+  
+  # Reproducibility
+  seed: 42
+  deterministic: true
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/experiment.log"
+
