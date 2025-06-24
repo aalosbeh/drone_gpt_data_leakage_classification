@@ -31,7 +31,7 @@ This comprehensive research project successfully implements a state-of-the-art G
 - `simple_gpt_finetuning.py`: Training pipeline
 - `generate_results.py`: Results generation and visualization
 
-###  Dataset and Preprocessed Data 📊
+###  Dataset and Preprocessed Data 
 
 **Location:** `data/`
 
