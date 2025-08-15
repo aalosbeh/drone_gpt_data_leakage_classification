@@ -1,7 +1,5 @@
 MIT License
 
-Copyright (c) 2025 Anas AlSobeh (Southern Illinois University Carbondale) and Omar Darwish (Eastern Michigan University)
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -20,18 +18,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
 
-ACADEMIC USE NOTICE:
-
-This software is developed for academic research purposes. If you use this 
-software in your research, please cite:
-
-AlSobeh, A., & Darwish, O. (2025). GPT-based Classification of Drone Data 
-Leakage Risk Groups: A Fine-tuning Approach for Cybersecurity Applications. 
-[Research Paper - Drone Data Leakage Classification].
-
-For commercial use or licensing inquiries, please contact:
-- Anas AlSobeh: [email]@siu.edu
-- Omar Darwish: [email]@emich.edu
 
