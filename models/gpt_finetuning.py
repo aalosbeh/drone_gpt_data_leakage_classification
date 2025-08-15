@@ -1,12 +1,4 @@
 #!/usr/bin/env python3
-"""
-GPT Fine-tuning and Post-tuning Evaluation
-Authors: Anas AlSobeh (Southern Illinois University Carbondale)
-         Omar Darwish (Eastern Michigan University)
-
-This script implements GPT fine-tuning for drone data classification and evaluates
-the post-tuning performance compared to pre-tuning baseline.
-"""
 
 import os
 import sys
@@ -413,4 +405,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
