@@ -1,12 +1,4 @@
 #!/usr/bin/env python3
-"""
-Memory-Efficient GPT Fine-tuning Demo
-Authors: Anas AlSobeh (Southern Illinois University Carbondale)
-         Omar Darwish (Eastern Michigan University)
-
-This script demonstrates GPT fine-tuning with a smaller subset for memory efficiency.
-"""
-
 import os
 import sys
 import torch
@@ -378,4 +370,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
