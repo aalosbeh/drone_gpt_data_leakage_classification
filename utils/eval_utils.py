@@ -1,12 +1,4 @@
 #!/usr/bin/env python3
-"""
-Evaluation Utilities for Drone Data Leakage Classification
-Authors: Anas AlSobeh (Southern Illinois University Carbondale)
-         Omar Darwish (Eastern Michigan University)
-
-This module provides utilities for model evaluation and performance analysis.
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -392,4 +384,5 @@ class ModelEvaluator:
         logger.info(f"Evaluation report saved to {report_path}")
         
         return report_lines
+
 
