@@ -1,13 +1,4 @@
 #!/usr/bin/env python3
-"""
-GPT Model Implementation and Pre-tuning Evaluation
-Authors: Anas AlSobeh (Southern Illinois University Carbondale)
-         Omar Darwish (Eastern Michigan University)
-
-This script implements the GPT model for drone data classification and evaluates
-its zero-shot (pre-tuning) performance.
-"""
-
 import os
 import sys
 import torch
@@ -380,4 +371,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
