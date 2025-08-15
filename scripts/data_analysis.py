@@ -1,12 +1,4 @@
 #!/usr/bin/env python3
-"""
-Drone Data Leakage Classification - Dataset Analysis and Preprocessing
-Authors: Anas AlSobeh (Southern Illinois University Carbondale)
-         Omar Darwish (Eastern Michigan University)
-
-This script performs comprehensive analysis and preprocessing of the drone-captured
-data leakage dataset for classification into low-risk and high-risk groups.
-"""
 
 import pandas as pd
 import numpy as np
@@ -408,4 +400,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
