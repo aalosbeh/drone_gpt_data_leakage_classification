@@ -1,8 +1,3 @@
-# Drone Data Leakage Classification - Configuration File
-# Authors: Anas AlSobeh (Southern Illinois University Carbondale)
-#          Omar Darwish (Eastern Michigan University)
-
-# Dataset Configuration
 dataset:
   name: "drone_data_leakage"
   path: "data/dataset_64.csv"
@@ -107,4 +102,5 @@ logging:
   level: "INFO"
   format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
   file: "logs/experiment.log"
+
 
