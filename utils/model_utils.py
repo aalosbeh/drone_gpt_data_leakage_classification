@@ -1,11 +1,4 @@
 #!/usr/bin/env python3
-"""
-Model Utilities for Drone Data Leakage Classification
-Authors: Anas AlSobeh (Southern Illinois University Carbondale)
-         Omar Darwish (Eastern Michigan University)
-
-This module provides utilities for GPT model handling, training, and evaluation.
-"""
 
 import torch
 import torch.nn as nn
@@ -417,4 +410,5 @@ class ModelTrainer:
         
         self.model.load_state_dict(torch.load(model_path, map_location=self.device))
         logger.info(f"Model loaded from {model_path}")
+
 
